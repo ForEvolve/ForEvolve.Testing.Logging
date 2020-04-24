@@ -1,15 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30021.99
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9E614B80-CE13-4EA9-B4E4-27D64066C82C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForEvolve.Testing.Logging", "src\ForEvolve.Testing.Logging\ForEvolve.Testing.Logging.csproj", "{4FD762B4-C3AE-4213-9F32-631DFA8D9DE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForEvolve.Testing.Logging", "src\ForEvolve.Testing.Logging\ForEvolve.Testing.Logging.csproj", "{4FD762B4-C3AE-4213-9F32-631DFA8D9DE3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{24D189ED-D714-4845-A23E-EE529418D929}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForEvolve.Testing.Logging.Tests", "test\ForEvolve.Testing.Logging.Tests\ForEvolve.Testing.Logging.Tests.csproj", "{54C38C1B-A54D-4864-800F-2B6CC89F3785}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForEvolve.Testing.Logging.Tests", "test\ForEvolve.Testing.Logging.Tests\ForEvolve.Testing.Logging.Tests.csproj", "{54C38C1B-A54D-4864-800F-2B6CC89F3785}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{822C73AA-D79B-40C0-A166-C23D6779B391}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.prettierrc = .prettierrc
+		README.md = README.md
+		version.json = version.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4FD762B4-C3AE-4213-9F32-631DFA8D9DE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -49,8 +54,14 @@ Global
 		{54C38C1B-A54D-4864-800F-2B6CC89F3785}.Release|x86.ActiveCfg = Release|Any CPU
 		{54C38C1B-A54D-4864-800F-2B6CC89F3785}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4FD762B4-C3AE-4213-9F32-631DFA8D9DE3} = {9E614B80-CE13-4EA9-B4E4-27D64066C82C}
 		{54C38C1B-A54D-4864-800F-2B6CC89F3785} = {24D189ED-D714-4845-A23E-EE529418D929}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5129B38E-7593-43CB-A7E2-86D3BDFCCE2F}
 	EndGlobalSection
 EndGlobal
