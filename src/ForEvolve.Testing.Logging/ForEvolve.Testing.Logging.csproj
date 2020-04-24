@@ -6,8 +6,8 @@
   
   <PropertyGroup>
     <Product>ForEvolve Testing Logging</Product>
-    <Description>ForEvolve Framework core classes.</Description>
-    <PackageTags>xunit,logging,forevolve,aspnetcore,asp.net,core,aspnet,asp</PackageTags>
+    <Description>Testing library, allowing to log to xUnit ITestOutputHelper.</Description>
+    <PackageTags>xunit,logging,testing,ITestOutputHelper,forevolve,aspnetcore,asp.net,core,aspnet,asp</PackageTags>
     <RepositoryUrl>https://github.com/ForEvolve/ForEvolve.Testing.Logging</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <LangVersion>latest</LangVersion>
