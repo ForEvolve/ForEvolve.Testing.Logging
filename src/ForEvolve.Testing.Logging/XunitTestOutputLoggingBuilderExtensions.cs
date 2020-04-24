@@ -1,7 +1,8 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using ForEvolve.Testing.Logging;
+using Microsoft.Extensions.Logging;
 using Xunit.Abstractions;
 
-namespace ForEvolve.Testing.Logging
+namespace Microsoft.Extensions.Logging
 {
     public static class XunitTestOutputLoggingBuilderExtensions
     {
