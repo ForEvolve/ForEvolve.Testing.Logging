@@ -1,15 +1,15 @@
 ﻿using Microsoft.Extensions.Logging;
 using System;
-using Xunit.Abstractions;
+using System.Collections.Generic;
 
 namespace ForEvolve.Testing.Logging
 {
-    public class XunitTestOutputLogger : ILogger
+    public class AssertableLogger : ILogger
     {
-        public ITestOutputHelper Output { get; }
-        public XunitTestOutputLogger(ITestOutputHelper output)
+        public IList<string> Lines { get; }
+        public AssertableLogger(IList<string> lines)
         {
-            Output = output ?? throw new ArgumentNullException(nameof(output));
+            Lines = lines ?? throw new ArgumentNullException(nameof(lines));
         }
 
         public IDisposable BeginScope<TState>(TState state)
@@ -21,7 +21,7 @@ namespace ForEvolve.Testing.Logging
         public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
         {
             var message = formatter(state, exception);
-            Output.WriteLine(message);
+            Lines.Add(message);
         }
     }
 }
